@@ -1,0 +1,34 @@
+@lmgreen: #9BC074;
+@lmgreen-deep: #77AD65;
+
+.list-box {
+  width: 100%;
+  margin-top: 15px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.login-poa(@width, @height) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: @width;
+    height: @height;
+    margin-left: -(@width / 2);
+    margin-top: -(@height / 2);
+}
+
+.placeholder-color(@color) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: @color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: @color;
+  }
+  /* &::-moz-placeholder { Mozilla Firefox 19+
+  　color: @color;
+  }
+  &:-ms-input-placeholder { Internet Explorer 10+
+  　color: @color;
+  } */
+}
